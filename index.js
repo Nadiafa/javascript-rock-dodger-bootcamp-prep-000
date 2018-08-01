@@ -58,9 +58,7 @@ function createRock(x) {
   rock.style.left = `${x}px`
 
   // Hmmm, why would we have used `var` here?
-  var top = 0
-
-  rock.style.top = top
+  var top = rock.style.top = 0
 
   /**
    * Now that we have a rock, we'll need to append
@@ -80,6 +78,7 @@ function createRock(x) {
      * we should call endGame()
      */
   rock.style.top = `${top += 2}px`;
+  
   if (checkCollision(rock)) {
     return endGame();
   }
@@ -97,7 +96,6 @@ function createRock(x) {
      * But if the rock *has* reached the bottom of the GAME,
      * we should remove the rock from the DOM
      */
-  }
 
   // We should kick of the animation of the rock around here
     window.requestAnimationFrame(moveRock)   
