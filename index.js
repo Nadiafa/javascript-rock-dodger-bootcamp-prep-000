@@ -134,7 +134,7 @@ function moveDodgerLeft() {
    */
 }
 
-/******/
+/*TODO:*/
 function moveDodgerLeft() {
   var leftNumbers = dodger.style.left.replace('px', '')
   var left = parseInt(leftNumbers, 10)
