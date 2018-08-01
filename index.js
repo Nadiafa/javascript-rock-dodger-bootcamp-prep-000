@@ -119,6 +119,11 @@ function moveDodger(e) {
    * we've declared for you above.)
    * And be sure to use the functions declared below!
    */
+   if (e.which === LEFT_ARROW) {
+     moveDodgerLeft();
+   } else if (e.which === RIGTH_ARROW){
+     moveDodgerRight();
+   }
 }
 
 function moveDodgerLeft() {
@@ -128,6 +133,19 @@ function moveDodgerLeft() {
    * (mabye 4 pixels?). Use window.requestAnimationFrame()!
    */
 }
+
+/******/
+function moveDodgerLeft() {
+  var leftNumbers = dodger.style.left.replace('px', '')
+  var left = parseInt(leftNumbers, 10)
+  
+    dodger.style.left = `${left - 4}px`
+  
+
+
+}
+
+
 
 function moveDodgerRight() {
   // implement me!
