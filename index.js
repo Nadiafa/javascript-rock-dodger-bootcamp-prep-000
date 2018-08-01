@@ -110,6 +110,12 @@ function createRock(x) {
 function endGame() {
 }
 
+
+
+
+
+
+
 function moveDodger(e) {
   // implement me!
   /**
@@ -130,11 +136,7 @@ function moveDodger(e) {
      moveDodgerLeft();
    } else if (code === RIGHT_ARROW){
      moveDodgerRight();
-   } else {
-     
    }
-  
-   
 }
 
 function moveDodgerLeft() {
@@ -151,8 +153,6 @@ function moveDodgerLeft() {
     }
   })
 }
-
-/*TODO:*/
 
 function moveDodgerRight() {
   // implement me!
